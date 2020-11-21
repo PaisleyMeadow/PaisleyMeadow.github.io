@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+}
+.header-font{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+.bold-font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.body-font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 2%;
+
+    height: 90%;
+    padding-top: 2%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#main-container div{
+    /* height: 90%; */
+}
+#left-column{
+    display: grid;
+    grid-template-rows: repeat(5, 10%);
+    padding: 5%;
+    
+    background-color: #f1cdc0;
+}
+#right-column{
+    height: fit-content;
+    padding: 5%;
+    background-color: #f6f4d5;
+}
+
+#home{
+    /* display: none; */
+}
+h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #9f2323;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #9f4223;
+}
+h2 a{
+    text-decoration: none;
+    color: #9f4223;
+
+}
+#left-column h2:hover{
+    cursor: pointer;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#right-column h2{
+    padding-top: 7%;
+}
+.contact-inline{
+    text-decoration: underline;
+}
+.contact-inline:hover{
+    cursor: pointer;
+}
+
+#about{
+    display: none;
+}
+#about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+    border-top: #9f2323 .8em solid;
+    border-right: #9f2323 .8em solid;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #d17d2e;
+    font-size: 1em;
+}
+h3 span{
+    color: black;
+}
+#about p a{
+    color: black;
+}
+
+#contact{
+    display: none;
+}
+#contact p a{
+    color: black;
+}
+#connect-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    justify-items: center;
+
+    padding: 2%;
+    border-top: #9f2323 .3em solid;
+    border-right: #9f2323 .3em solid;
+    border-bottom: #9f2323 1em solid;
+    border-left: #9f2323 1em solid;
+
+}
+#connect-container a{
+    width: 40%;
+}
+a img{
+    width: 100%;
+}
+
+.side-links{
+    width: 100%;
+    padding: 2%;
+    padding-left: 10%;
+}
+.side-links:hover, .active-tab{
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+
+    background-color: #9f4223;
+    color: white;
+}
