@@ -12,10 +12,8 @@ $("#contact-link").click(function(){
 $(".contact-inline").click(function(){
     switchCards("#contact", "#contact-link");
 });
-
-//open resume
-$("#resume-link").click(function(){
-    window.open("images/resume2020.pdf", "_blank");
+$("#resume-link").click(function(){ 
+    switchCards("#resume", this);
 });
 
 function switchCards(id, tab){
